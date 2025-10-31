@@ -4,17 +4,82 @@ body, html {
   height: 100%;
   font-family: sans-serif;
 }
+
 header {
   display: flex;
-  padding: 10px;
+  align-items: center;
+  padding: 5px 10px;
   background: #f1f1f1;
 }
-#urlBar {
+
+header input {
   flex: 1;
   padding: 5px;
+  margin-right: 5px;
 }
-iframe {
+
+header button {
+  margin-left: 5px;
+}
+
+#tabs {
+  display: flex;
+  background: #ddd;
+  padding: 5px;
+}
+
+.tab {
+  padding: 5px 10px;
+  border-right: 1px solid #bbb;
+  cursor: pointer;
+}
+
+.tab.active {
+  background: #fff;
+  font-weight: bold;
+}
+
+main {
+  height: calc(100% - 90px);
+  position: relative;
+}
+
+iframe.webview {
   width: 100%;
-  height: calc(100% - 50px);
+  height: 100%;
   border: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#bookmarksPanel {
+  position: absolute;
+  right: 10px;
+  top: 50px;
+  background: #fff;
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+.hidden {
+  display: none;
+}
+
+/* ダークモード */
+body.dark-mode {
+  background: #121212;
+  color: #eee;
+}
+
+body.dark-mode header {
+  background: #222;
+}
+
+body.dark-mode #tabs {
+  background: #333;
+}
+
+body.dark-mode .tab.active {
+  background: #444;
 }
