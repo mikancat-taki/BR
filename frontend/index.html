@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>My Monot Web</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <input type="text" id="urlBar" placeholder="URLを入力">
+  <button id="goBtn">Go</button>
+  <button id="newTabBtn">＋</button>
+  <button id="bookmarkBtn">★</button>
+  <button id="darkModeBtn">🌙</button>
+  <button id="historyBtn">履歴</button>
+</header>
+
+<div id="tabs"></div>
+<main id="webviews"></main>
+
+<div id="bookmarksPanel" class="hidden">
+  <h3>Bookmarks</h3>
+  <ul id="bookmarksList"></ul>
+</div>
+
+<div id="historyPanel" class="hidden">
+  <h3>History</h3>
+  <ul id="historyList"></ul>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
