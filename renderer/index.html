@@ -9,10 +9,16 @@
   <header>
     <input type="text" id="urlBar" placeholder="URLを入力">
     <button id="goBtn">Go</button>
+    <button id="newTabBtn">＋</button>
+    <button id="bookmarkBtn">★</button>
+    <button id="darkModeBtn">🌙</button>
   </header>
-  <main>
-    <iframe id="webview" src="https://www.google.com"></iframe>
-  </main>
+  <div id="tabs"></div>
+  <main id="webviews"></main>
+  <div id="bookmarksPanel" class="hidden">
+    <h3>Bookmarks</h3>
+    <ul id="bookmarksList"></ul>
+  </div>
   <script src="script.js"></script>
 </body>
 </html>
